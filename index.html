@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Desert Beacon | Satire</title>
+  <meta name="description" content="Satirical news and commentary.">
+  <style>
+    :root {
+      --ink: #181818;
+      --paper: #f8f3e8;
+      --rule: #c9c0ae;
+      --accent: #a51d1d;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    .wrap {
+      width: min(1100px, 92%);
+      margin: 0 auto;
+    }
+
+    header {
+      border-top: 8px solid var(--ink);
+      border-bottom: 3px solid var(--ink);
+      padding: 22px 0 15px;
+      text-align: center;
+    }
+
+    .kicker {
+      color: var(--accent);
+      font: bold 12px Arial, sans-serif;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 7px 0;
+      font-size: clamp(2.3rem, 7vw, 5.3rem);
+      line-height: 0.9;
+      letter-spacing: -2px;
+    }
+
+    .tagline {
+      margin: 8px 0 0;
+      font-style: italic;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 18px;
+      padding: 13px 0;
+      border-bottom: 1px solid var(--rule);
+      font: bold 14px Arial, sans-serif;
+      text-transform: uppercase;
+    }
+
+    nav a {
+      color: var(--ink);
+      text-decoration: none;
+    }
+
+    nav a:hover { color: var(--accent); }
+
+    main {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 35px;
+      padding: 32px 0;
+    }
+
+    .lead {
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 25px;
+      margin-bottom: 25px;
+    }
+
+    h2 {
+      margin: 8px 0;
+      font-size: clamp(1.8rem, 4vw, 3.3rem);
+      line-height: 1.02;
+    }
+
+    h3 {
+      margin: 5px 0;
+      font-size: 1.45rem;
+      line-height: 1.1;
+    }
+
+    .label {
+      color: var(--accent);
+      font: bold 12px Arial, sans-serif;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .summary {
+      font-size: 1.1rem;
+      line-height: 1.45;
+    }
+
+    .story {
+      border-bottom: 1px solid var(--rule);
+      padding: 18px 0;
+    }
+
+    aside {
+      border-left: 1px solid var(--rule);
+      padding-left: 25px;
+    }
+
+    aside h3 {
+      font-family: Arial, sans-serif;
+      font-size: 1rem;
+      text-transform: uppercase;
+    }
+
+    footer {
+      border-top: 3px solid var(--ink);
+      padding: 22px 0 40px;
+      text-align: center;
+      font: 13px Arial, sans-serif;
+    }
+
+    @media (max-width: 720px) {
+      main { grid-template-columns: 1fr; }
+      aside {
+        border-left: 0;
+        border-top: 1px solid var(--rule);
+        padding: 20px 0 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <div class="kicker">Independent satirical journalism</div>
+    <h1>The Dessert fathers</h1>
+    <p class="tagline">Reporting the news before anyone checks whether it happened.</p>
+  </header>
+
+  <nav class="wrap">
+    <a href="index.html">Home</a>
+    <a href="#local">Local</a>
+    <a href="#culture">Culture</a>
+    <a href="#opinion">Opinion</a>
+    <a href="about.html">About</a>
+  </nav>
+
+  <main class="wrap">
+    <section>
+      <article class="lead">
+        <div class="label">Top story</div>
+        <h2><a href="articles/fitness-monday.html">Phoenix Man Announces New Fitness Plan To Begin Immediately After This Weekend</a></h2>
+        <p class="summary">Following a rigorous 14-minute review of resistance-band options, the local resident says he has never felt more prepared to start later.</p>
+      </article>
+
+      <article class="story" id="local">
+        <div class="label">Local news</div>
+        <h3><a href="#">HOA Introduces Fine For Front Yards Displaying Too Much Personality</a></h3>
+        <p>Officials say the neighborhood must remain a place where no one can tell who lives anywhere.</p>
+      </article>
+
+      <article class="story" id="culture">
+        <div class="label">Culture</div>
+        <h3><a href="#">Experts Confirm Toddler Can Hear Snack Package Opening From Three Zip Codes Away</a></h3>
+        <p>Scientists call the discovery “deeply inconvenient, but not surprising.”</p>
+      </article>
+
+      <article class="story" id="opinion">
+        <div class="label">Opinion</div>
+        <h3><a href="#">Opinion: I Deserve A Medal For Answering One Email Before Lunch</a></h3>
+        <p>A local professional reflects on a morning of remarkable administrative courage.</p>
+      </article>
+    </section>
+
+    <aside>
+      <h3>About this site</h3>
+      <p>The Dessert fathers is a work of satire. Its stories are fictional.</p>
+
+      <h3>Most read</h3>
+      <p><a href="#">Dad Announces He Is ‘Just Resting His Eyes’ During Entire Movie</a></p>
+      <p><a href="#">Study Finds Group Text Has Entered Its Most Dangerous Phase</a></p>
+
+      <h3>Get new stories</h3>
+      <p>Follow the publication’s social accounts or add a free newsletter later.</p>
+    </aside>
+  </main>
+
+  <footer class="wrap">
+    <p>© 2026 The Dessert fathers. Satire and fictional commentary.</p>
+  </footer>
+</body>
+</html>
