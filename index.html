@@ -8,7 +8,7 @@
 
   <meta
     name="description"
-    content="Dessert Fathers is a satirical Catholic news publication reporting stories that are completely fictional, mostly reverent, and occasionally unnecessary."
+    content="Dessert Fathers is a fictional Catholic satire publication covering parish life, fatherhood, and the serious work of finding snacks after Mass."
   >
 
   <style>
@@ -22,10 +22,6 @@
 
     * {
       box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
     }
 
     body {
@@ -47,7 +43,7 @@
     .masthead {
       border-top: 8px solid var(--ink);
       border-bottom: 3px solid var(--ink);
-      padding: 24px 0 17px;
+      padding: 24px 0 18px;
       text-align: center;
     }
 
@@ -55,23 +51,23 @@
       margin: 0;
       color: var(--accent);
       font-family: Arial, Helvetica, sans-serif;
-      font-size: 0.73rem;
+      font-size: 0.75rem;
       font-weight: 700;
-      letter-spacing: 1.7px;
+      letter-spacing: 1.6px;
       text-transform: uppercase;
     }
 
-    .site-title {
-      margin: 8px 0 6px;
-      font-size: clamp(2.8rem, 8vw, 6.3rem);
+    h1 {
+      margin: 8px 0 7px;
+      font-size: clamp(2.8rem, 8vw, 6.2rem);
       line-height: 0.9;
-      letter-spacing: -2.5px;
+      letter-spacing: -2px;
     }
 
     .tagline {
       margin: 0;
       color: var(--muted);
-      font-size: 1.04rem;
+      font-size: 1.05rem;
       font-style: italic;
     }
 
@@ -79,5 +75,295 @@
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 18px;
+      gap: 17px;
+      padding: 13px 0;
+      border-bottom: 1px solid var(--rule);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.7px;
+      text-transform: uppercase;
+    }
 
+    nav a {
+      text-decoration: none;
+    }
+
+    nav a:hover,
+    nav a:focus {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: minmax(0, 2fr) minmax(230px, 0.8fr);
+      gap: 35px;
+      padding: 34px 0 45px;
+    }
+
+    .section-heading {
+      margin: 0 0 17px;
+      padding-bottom: 9px;
+      border-bottom: 2px solid var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .lead-story {
+      margin-bottom: 25px;
+      padding-bottom: 27px;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .label {
+      margin: 0 0 7px;
+      color: var(--accent);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 1.1px;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: clamp(2rem, 4.3vw, 3.8rem);
+      line-height: 1.02;
+      letter-spacing: -1px;
+    }
+
+    h2 a,
+    h3 a {
+      text-decoration: none;
+    }
+
+    h2 a:hover,
+    h2 a:focus,
+    h3 a:hover,
+    h3 a:focus {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 5px;
+    }
+
+    .lead-summary {
+      margin: 13px 0 0;
+      font-size: 1.13rem;
+      line-height: 1.5;
+    }
+
+    .story {
+      padding: 20px 0;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    h3 {
+      margin: 0;
+      font-size: clamp(1.35rem, 2.5vw, 1.8rem);
+      line-height: 1.12;
+    }
+
+    .story-summary {
+      margin: 8px 0 0;
+      color: #38342e;
+      font-size: 1rem;
+      line-height: 1.45;
+    }
+
+    aside {
+      align-self: start;
+      border-left: 1px solid var(--rule);
+      padding-left: 27px;
+    }
+
+    .sidebar-box {
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .sidebar-box:last-child {
+      border-bottom: 0;
+    }
+
+    .sidebar-box h3 {
+      margin-bottom: 9px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.9px;
+      text-transform: uppercase;
+    }
+
+    .sidebar-box p {
+      margin: 0;
+      font-size: 0.98rem;
+      line-height: 1.5;
+    }
+
+    .sidebar-link {
+      display: block;
+      margin: 11px 0;
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 1.25;
+      text-decoration: none;
+    }
+
+    .sidebar-link:hover,
+    .sidebar-link:focus {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    footer {
+      padding: 23px 0 42px;
+      border-top: 3px solid var(--ink);
+      color: var(--muted);
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.78rem;
+      line-height: 1.5;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+
+    @media (max-width: 760px) {
+      main {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+
+      aside {
+        border-top: 2px solid var(--ink);
+        border-left: 0;
+        padding-top: 22px;
+        padding-left: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="wrap masthead">
+    <p class="kicker">Independent Catholic Satire Since 2026</p>
+
+    <h1>Dessert Fathers</h1>
+
+    <p class="tagline">
+      Reporting the news before anyone has a chance to fact-check it.
+    </p>
+  </header>
+
+  <nav class="wrap" aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="#latest">Latest</a>
+    <a href="#about">About</a>
+  </nav>
+
+  <main class="wrap">
+    <section id="latest" aria-label="Latest stories">
+      <p class="section-heading">Latest News</p>
+
+      <article class="lead-story">
+        <p class="label">Catholic Life</p>
+
+        <h2>
+          <a href="articles/catholic-dating-flagellation.html">
+            Catholic Dating Apps Add Question Asking Whether Users Flagellate Themselves
+          </a>
+        </h2>
+
+        <p class="lead-summary">
+          New profile feature helps singles determine whether a potential spouse
+          is truly serious about mortification, spiritual discipline, and
+          eventually discussing it over coffee.
+        </p>
+      </article>
+
+      <article class="story">
+        <p class="label">Health &amp; Fitness</p>
+
+        <h3>
+          <a href="articles/fitness-monday.html">
+            Phoenix Man Announces New Fitness Plan To Begin Immediately After This Weekend
+          </a>
+        </h3>
+
+        <p class="story-summary">
+          Local resident says Monday remains the most realistic target date for
+          a complete physical transformation.
+        </p>
+      </article>
+
+      <article class="story">
+        <p class="label">Church News</p>
+
+        <h3>
+          <a href="articles/Holy-monday.html">
+            Holy Monday Arrives Just Hours After Catholics Finally Got Comfortable
+          </a>
+        </h3>
+
+        <p class="story-summary">
+          Parishioners report being fully prepared for Holy Week until they
+          realized it involved attending something on a weekday.
+        </p>
+      </article>
+    </section>
+
+    <aside id="about" aria-label="About Dessert Fathers">
+      <div class="sidebar-box">
+        <h3>About Dessert Fathers</h3>
+
+        <p>
+          Dessert Fathers is a satirical Catholic publication covering fictional
+          news, parish life, fatherhood, and the daily struggle to remain holy
+          while locating post-Mass doughnuts.
+        </p>
+      </div>
+
+      <div class="sidebar-box">
+        <h3>Most Read</h3>
+
+        <a class="sidebar-link" href="articles/catholic-dating-flagellation.html">
+          Catholic Dating Apps Add Question Asking Whether Users Flagellate Themselves
+        </a>
+
+        <a class="sidebar-link" href="articles/fitness-monday.html">
+          Phoenix Man Announces New Fitness Plan To Begin Immediately After This Weekend
+        </a>
+
+        <a class="sidebar-link" href="articles/Holy-monday.html">
+          Holy Monday Arrives Just Hours After Catholics Finally Got Comfortable
+        </a>
+      </div>
+
+      <div class="sidebar-box">
+        <h3>Satire Notice</h3>
+
+        <p>
+          This publication is satire. Articles, quotations, events, and
+          organizations may be fictional and are written for humor.
+        </p>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="wrap">
+    <p>© 2026 Dessert Fathers. Satire and fictional commentary.</p>
+    <p>
+      Not affiliated with the Catholic Church, any diocese, parish, dating app,
+      or actual dessert.
+    </p>
+  </footer>
+</body>
+</html>
